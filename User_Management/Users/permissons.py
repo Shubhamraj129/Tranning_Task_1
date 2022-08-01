@@ -5,7 +5,7 @@ class UserPermission(permissions.BasePermission):
 
     def has_permission(self, request, view):
         """
-            This function is used for when user is login then don`t show the POST Operation For user
+            This function is used for when user is login then don`t show the POST Operation For user and when user is logout then show New user  
         """
         if request.method == 'POST' and request.user.is_authenticated:
             return False
