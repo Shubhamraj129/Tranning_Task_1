@@ -202,4 +202,4 @@ class Test_cases_for_Superuser(APITestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
-        # print(superuser.id)
+      
