@@ -6,6 +6,9 @@ from django.db import models
 # Create your models here.
 
 class Create_User(AbstractUser):
+      """
+        This creates the table in the database
+      """
     email = models.EmailField(
         verbose_name='Email',
         max_length=255,
